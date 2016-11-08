@@ -1,0 +1,78 @@
+//------------------------------------------------------------
+// # Pagination
+//------------------------------------------------------------
+
+.pagination {
+  display: flex;
+  padding: 2em 0 2em 0;
+  margin-top: 5em;
+  justify-content: flex-end;
+
+  &__pagenr {
+    text-decoration: none;
+    color: $brown;
+    //font-weight: 600;
+    padding: 0.2em 0.7em;
+    margin: 0 0.2em;
+    border-radius: $border-radius;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-color: $brown;
+      //background-color: $yellow;
+    }
+
+    &.active {
+      background-color: $brown;
+      color: #fff;
+    }
+  }
+}
+
+//------------------------------------------------------------
+// # Next Prev Words
+//------------------------------------------------------------
+
+.next-prev-word {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $small-bp) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.word-count {
+  order: 1;
+  padding: 1em;
+  font-style: italic;
+  text-align: center;
+  color: #bbb;
+
+  @media (min-width: $small-bp) {
+    order: 0;
+  }
+}
+
+.next,
+.prev {
+  display: inline-block;
+  padding: 0.8em;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  border-radius: $border-radius;
+  text-align: center;
+  color: $white !important;
+
+  background: $yellow; // fallback for old browsers
+  background: linear-gradient(to right, $yellow , $yellow-light);
+
+  &:hover {
+    background: $yellow; // fallback for old browsers
+    background: linear-gradient(to right, $yellow-light , $yellow);
+    text-decoration: none;
+  }
+}

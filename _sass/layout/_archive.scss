@@ -1,0 +1,53 @@
+//------------------------------------------------------------
+// # Archive
+//------------------------------------------------------------
+
+.archive-wotd {
+  border-bottom: 1px dashed #ccc;
+}
+
+.archive-wotd-inner {
+  align-items: center;
+
+  @media (min-width: $small-bp) {
+    display: flex;
+  }
+}
+
+.archive-wotd__meta {
+  margin-top: 1em;
+
+  @media (min-width: $small-bp) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.archive-wotd__title {
+  padding: 1em 0.5em 0.7em;
+  text-decoration: none;
+  color: $blue;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    color: darken($blue, 10%);
+    text-decoration: none;
+    background-color: #f0f0f0;
+  }
+
+  h2 {
+    font-size: em(20px);
+  }
+
+  @media (min-width: $small-bp) {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  span {
+    color: $copy-color;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,65 @@
+//------------------------------------------------------------
+// # Header
+//------------------------------------------------------------
+
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: $white !important;
+  font-weight: 400;
+  font-size: 20px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__image {
+    max-width: 40px;
+    margin-right: 1em;
+    border-radius: $border-radius;
+  }
+
+  &__title {
+    display: none;
+
+    @media (min-width: $medium-bp) {
+      display: block;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $blue; // fallback for old browsers
+  background: linear-gradient(to right, $blue , $blue-light);
+
+  padding: 2em 3em;
+}
+
+.main-naviation {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    margin: 0 0.5em;
+    padding: 1em 1em 0.8em 1em;
+    border: 2px solid $white;
+    border-radius: $border-radius;
+    color: $white;
+    font-weight: 400;
+    transition: border-color 0.2s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 2px solid darken($blue, 10%);
+      background-color: darken($blue, 10%);
+      transition: border-color 0.2s ease-in-out;
+    }
+  }
+}

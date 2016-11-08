@@ -1,0 +1,24 @@
+//------------------------------------------------------------
+// # Variables
+//------------------------------------------------------------
+
+$blue: #3099df;
+$blue-light: lighten($blue, 5%);
+$blue-dark: #344a5f;
+$yellow: #f2c300;
+$yellow-light: lighten($yellow, 3%);
+$brown: #7d7769;
+$white: #ffffff;
+
+$grey-light: #f7f7f7;
+$grey: #848484;
+
+$small-bp: 520px;
+$medium-bp: 768px;
+$large-bp: 940px;
+
+$base-font: 'Source Sans Pro', 'Helvetica', 'Arial', 'sans-serif';
+$serif-font: 'Lora';
+$copy-color: #3e3e3e;
+
+$border-radius: 8px;

@@ -1,0 +1,30 @@
+---
+layout: archives
+title: Archives
+---
+
+<div class="archive-listing">
+
+{% for post in site.posts %}
+
+  <article class="archive-wotd">
+    <div class="archive-wotd-inner">
+
+      <a class="archive-wotd__title" href="{{ site.baseurl }}/{{ post.url }}">
+
+        <div>
+          <h2>{{ post.title }}</h2>
+          <span>{{ post.eng_title }}</span>
+        </div>
+
+        <div class="archive-wotd__meta">
+          <span>{{ post.date | date: '%B %d, %Y' }}</span>
+        </div>
+      </a>
+
+    </div>
+  </article>
+
+{% endfor %}
+
+</div>

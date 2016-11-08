@@ -1,0 +1,44 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in paginator.posts limit:1%}
+<article class="wotd">
+  <div class="wotd-inner">
+
+    <div class="wotd__meta">
+      <h5>{{ post.date | date: '%B %d, %Y' }}</h5>
+    </div>
+
+    <div class="wotd__title">
+    <h1>{{ post.title }}</h1>
+    <p class="eng-title">{{post.eng_title}}</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="wotd__content">
+      {{ post.content }}
+    </div>
+
+  </div>
+</article>
+{% endfor %}
+
+<!-- pagination -->
+<div class="next-prev-word">
+  {% if paginator.previous_page %}
+    <a href="{{ site.baseurl }}/{{ paginator.previous_page_path }}" class="prev">Previous Word</a>
+  {% else %}
+    <span class="prev">Previous Word</span>
+  {% endif %}
+
+  <span class="word-count">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+  <a href="{{ site.baseurl }}/{{ paginator.next_page_path }}" class="prev">Next Word</a>
+  {% else %}
+    <span class="next ">Next Word</span>
+  {% endif %}
+</div>

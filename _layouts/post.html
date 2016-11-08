@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="wotd">
+  <div class="wotd-inner">
+
+    <div class="wotd__meta">
+      <h5>{{ page.date | date: '%B %d, %Y' }}</h5>
+    </div>
+
+    <div class="wotd__title">
+      <h1>{{ page.title }}</h1>
+      <p class="eng-title">{{ page.eng_title }}</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="wotd__content">
+      {{ content }}
+    </div>
+
+  </div>
+</article>

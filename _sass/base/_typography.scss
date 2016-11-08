@@ -1,0 +1,60 @@
+//------------------------------------------------------------
+// # Typography
+//------------------------------------------------------------
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700');
+// @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Source+Sans+Pro:400,400i,600');
+
+html {
+  background: #fafafa;
+  // background: linear-gradient(to bottom, #f2f2f2, #fafafa 400px);
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+body {
+  font-family: $base-font;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $copy-color;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+//headings
+h1 {
+  font-size: em(30px);
+  color: #3099df;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media (min-width: $small-bp) {
+    font-size: em(50px);
+    letter-spacing: -0.03em;
+  }
+}
+
+h2 {
+  font-size: em(30px);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: em(24px);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: em(18px);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+em {
+  // font-family: $serif-font;
+}

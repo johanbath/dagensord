@@ -1,0 +1,31 @@
+//------------------------------------------------------------
+// # Layout
+//------------------------------------------------------------
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 3em 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.divider {
+  border-top: 1px dashed #ddd;
+  margin-bottom: 2em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 2em 0;
+    padding: 0;
+}

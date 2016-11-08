@@ -1,0 +1,37 @@
+//------------------------------------------------------------
+// # Functions
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// # Px to Em coverter
+// # Convert px values to em.
+//------------------------------------------------------------
+
+// Both examples will work:
+// font-size: em(12); or font-size: em(12px);
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

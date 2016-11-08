@@ -1,0 +1,55 @@
+//------------------------------------------------------------
+// # Article
+//------------------------------------------------------------
+
+.wotd {
+  padding: 3em;
+  border: 1px solid #f0f0f0;
+  border-radius: $border-radius;
+  background-color: $white;
+
+  .wotd-inner {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 720px;
+  }
+
+  &__meta {
+    display: block;
+    margin-bottom: 3em;
+    color: #bbb;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__title {
+    max-width: 650px;
+    margin: 0 auto 2em auto;
+
+    h1 {
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-style: italic;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    padding-top: 2em;
+    text-align: left;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: darken($blue, 10%);
+      }
+    }
+
+  }
+}
