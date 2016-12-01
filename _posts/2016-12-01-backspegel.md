@@ -19,13 +19,13 @@ during a class / day.
 
 ### Examples
 
-\- Ser du polisen?
+\- Ser du polisen?  
 \- Ja, i backspegeln.
 
-_\- Can you see the police?_
+_\- Can you see the police?_  
 _\- Yes, in the rear-view mirror._
 
 ----
 
-\- Dags för en backspegel.
+\- Dags för en backspegel.  
 _\- Time for a reflection of what we've done._
