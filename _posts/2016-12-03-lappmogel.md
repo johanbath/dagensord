@@ -6,7 +6,7 @@ eng_title: Snow
 
 ![Lappmögel]({{ site.baseurl }}/assets/post_images/snow.jpg)
 
-Lapp = Historical word for "Same", the indigenous population in the north of sweden.
+Lapp = Historical word for "Same", the indigenous population in the north of sweden.  
 Mögel = mold
 
 ----
