@@ -29,16 +29,12 @@ title: Home
 <!-- pagination -->
 <div class="next-prev-word">
   {% if paginator.previous_page %}
-    <a href="{{ site.baseurl }}/{{ paginator.previous_page_path }}" class="prev">Previous Word</a>
-  {% else %}
-    <span class="prev">Previous Word</span>
+    <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="prev">Previous Word</a>
   {% endif %}
 
   <span class="word-count">{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
   {% if paginator.next_page %}
-  <a href="{{ site.baseurl }}/{{ paginator.next_page_path }}" class="prev">Next Word</a>
-  {% else %}
-    <span class="next ">Next Word</span>
+  <a href="{{ site.url }}{{ paginator.next_page_path }}" class="prev">Next Word</a>
   {% endif %}
 </div>
