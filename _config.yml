@@ -19,6 +19,7 @@ email: sebastian@detectify.com
 description: Learn new words in swedish
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://sfi.detectify.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:title
 twitter_username: detectify
 github_username:  detectify
 paginate: 1
