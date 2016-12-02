@@ -6,7 +6,9 @@ eng_title: Snow
 
 ![Lappmögel]({{ site.baseurl }}/assets/post_images/snow.jpg)
 
-Lappmögel = Snow
+Lapp = Historical word for "Same", the indigenous population in the north of sweden.
+
+Mögel = mold
 
 ----
 
