@@ -4,7 +4,7 @@ title: Lappmögel
 eng_title: Snow
 ---
 
-![Lappmögel]({{ site.baseurl }}/assets/post_images/lappmogel.jpg)
+![Lappmögel]({{ site.baseurl }}/assets/post_images/snow.jpg)
 
 Lappmögel = Snow
 
